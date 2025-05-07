@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- tailwind and daisy ui  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- font awesome  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .fontt {
+            font-family: "Red Hat Text", sans-serif;
+        }
+    </style>
+</head>
+
+<body class="flex flex-col lg:flex-row container mx-auto p-10 lg:p-24">
+    <!-- dessert section  -->
+    <section class="w-full lg:w-3/4">
+        <h1 class="text-6xl font-semibold">Desserts</h1>
+        <div class="grid grid-cols-1 lg:grid-cols-3 mt-7 gap-7">
+            <!-- BOX 1 -->
+            <div class="relative">
+                <img src="images/image-waffle-desktop.jpg" alt="">
+                <!--active button -->
+                <button
+                    class="absolute left-12 bottom-36 p-4 bg-white border-[#993015] text-black hover:text-[#993015] btn border-2 rounded-full pl-9 pr-9"
+                    disabled>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                    </svg>
+                    Add to Cart</button>
+                <!-- button when active button clicked -->
+                <div class="absolute left-11 bottom-34 flex justify-between text-center bg-orange-600 text-white w-2/3 p-3 rounded-full">
+                    <button>-</button>
+                    <span>0</span>
+                    <button>+</button>
+                </div>
+                <div class="mt-10">
+                    <h3 class="text-xl text-gray-500">Waffle</h3>
+                    <h2 class="text-2xl font-bold">Waffle with Berries</h2>
+                    <h2 class="text-2xl text-[#993015]">$6.00</h2>
+                </div>
+            </div>
+            <!-- BOX 2 -->
+            <div class="relative">
+                <img src="images/image-creme-brulee-desktop.jpg" alt="">
+                <!-- active button  -->
+                <button
+                    class="absolute left-12 bottom-36 p-5 bg-white border-[#993015] text-black hover:text-[#993015] btn border-2 rounded-full pl-9 pr-9">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                    </svg>
+                    Add to Cart</button>
+                <!-- button when active button clicked -->
+                <div class="absolute left-11 bottom-35 flex justify-between text-center bg-orange-600 text-white w-2/3 p-3 rounded-full">
+                    <button>-</button>
+                    <span>0</span>
+                    <button>+</button>
+                </div>
+                <div class="mt-10">
+                    <h3 class="text-xl text-gray-500">Crème Brûlée</h3>
+                    <h2 class="text-2xl font-bold">Vanilla Bean Crème Brûlée</h2>
+                    <h2 class="text-2xl text-[#993015]">$7.00</h2>
+                </div>
+            </div>
+            <!-- box 3 -->
+            <div class="relative">
+                <img src="images/image-macaron-desktop.jpg" alt="">
+                <!-- active button  -->
+                <button
+                    class="absolute left-12 bottom-36 p-5 bg-white border-[#993015] text-black hover:text-[#993015] btn border-2 rounded-full pl-9 pr-9">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                    </svg>
+                    Add to Cart</button>
+                <!-- button when active button clicked -->
+                <div class="absolute left-11 bottom-35 flex justify-between text-center bg-orange-600 text-white w-2/3 p-3 rounded-full">
+                    <button>-</button>
+                    <span>0</span>
+                    <button>+</button>
+                </div>
+                <div class="mt-10">
+                    <h3 class="text-xl text-gray-500">Macaron</h3>
+                    <h2 class="text-2xl font-bold">Macaron Mix of Five</h2>
+                    <h2 class="text-2xl text-[#993015]">$8.00</h2>
+                </div>
+            </div>
+            <!-- box 4 -->
+            <div class="relative">
+                <img src="images/image-tiramisu-desktop.jpg" alt="">
+                <!-- active button  -->
+                <button
+                    class="absolute left-12 bottom-28 p-5 bg-white border-[#993015] text-black hover:text-[#993015] btn border-2 rounded-full pl-9 pr-9">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                    </svg>
+                    Add to Cart</button>
+                <!-- button when active button clicked -->
+                <div class="absolute left-12 bottom-28 flex justify-between text-center bg-orange-600 text-white w-2/3 p-3 rounded-full">
+                    <button>-</button>
+                    <span>0</span>
+                    <button>+</button>
+                </div>
+                <div class="mt-10">
+                    <h3 class="text-xl text-gray-500">Tiramisu</h3>
+                    <h2 class="text-2xl font-bold">Classic Tiramisu</h2>
+                    <h2 class="text-2xl text-[#993015]">$5.50</h2>
+                </div>
+            </div>
+            <!-- box 5 -->
+            <div class="relative">
+                <img src="images/image-baklava-desktop.jpg" alt="">
+                <!-- active button  -->
+                <button
+                    class="absolute left-12 bottom-28 p-5 bg-white border-[#993015] text-black hover:text-[#993015] btn border-2 rounded-full pl-9 pr-9">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                    </svg>
+                    Add to Cart</button>
+                <!-- button when active button clicked -->
+                <div class="absolute left-12 bottom-28 flex justify-between text-center bg-orange-600 text-white w-2/3 p-3 rounded-full">
+                    <button>-</button>
+                    <span>0</span>
+                    <button>+</button>
+                </div>
+                <div class="mt-10">
+                    <h3 class="text-xl text-gray-500">Baklava</h3>
+                    <h2 class="text-2xl font-bold">Pistachio Baklava</h2>
+                    <h2 class="text-2xl text-[#993015]">$4.00</h2>
+                </div>
+            </div>
+            <!-- box 6 -->
+            <div class="relative">
+                <img src="images/image-meringue-desktop.jpg" alt="">
+                <!-- active button  -->
+                <button
+                    class="absolute left-12 bottom-28 p-5 bg-white border-[#993015] text-black hover:text-[#993015] btn border-2 rounded-full pl-9 pr-9">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                    </svg>
+                    Add to Cart</button>
+                <!-- button when active button clicked -->
+                <div class="absolute left-12 bottom-28 flex justify-between text-center bg-orange-600 text-white w-2/3 p-3 rounded-full">
+                    <button>-</button>
+                    <span>0</span>
+                    <button>+</button>
+                </div>
+                <div class="mt-10">
+                    <h3 class="text-xl text-gray-500">Pie</h3>
+                    <h2 class="text-2xl font-bold">Lemon Meringue Pie</h2>
+                    <h2 class="text-2xl text-[#993015]">$5.00</h2>
+                </div>
+            </div>
+            <!-- box 7 -->
+            <div class="relative">
+                <img src="images/image-cake-desktop.jpg" alt="">
+                <!-- active button  -->
+                <button
+                    class="absolute left-12 bottom-28 p-5 bg-white border-[#993015] text-black hover:text-[#993015] btn border-2 rounded-full pl-9 pr-9">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                    </svg>
+                    Add to Cart</button>
+                <!-- button when active button clicked -->
+                <div class="absolute left-12 bottom-28 flex justify-between text-center bg-orange-600 text-white w-2/3 p-3 rounded-full">
+                    <button>-</button>
+                    <span>0</span>
+                    <button>+</button>
+                </div>
+                <div class="mt-10">
+                    <h3 class="text-xl text-gray-500">Cake</h3>
+                    <h2 class="text-2xl font-bold">Red Velvet Cake</h2>
+                    <h2 class="text-2xl text-[#993015]">$4.50</h2>
+                </div>
+            </div>
+            <!-- box 8 -->
+            <div class="relative">
+                <img src="images/image-brownie-desktop.jpg" alt="">
+                <!-- active button  -->
+                <button
+                    class="absolute left-12 bottom-28 p-5 bg-white border-[#993015] text-black hover:text-[#993015] btn border-2 rounded-full pl-9 pr-9">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                    </svg>
+                    Add to Cart</button>
+                <!-- button when active button clicked -->
+                <div class="absolute left-12 bottom-28 flex justify-between text-center bg-orange-600 text-white w-2/3 p-3 rounded-full">
+                    <button>-</button>
+                    <span>0</span>
+                    <button>+</button>
+                </div>
+                <div class="mt-10">
+                    <h3 class="text-xl text-gray-500">Brownie</h3>
+                    <h2 class="text-2xl font-bold">Salter Caramek Brownie</h2>
+                    <h2 class="text-2xl text-[#993015]">$5.50</h2>
+                </div>
+            </div>
+            <!-- box 9 -->
+            <div class="relative">
+                <img src="images/image-panna-cotta-desktop.jpg" alt="">
+                <!-- active button  -->
+                <button
+                    class="absolute left-12 bottom-28 p-5 bg-white border-[#993015] text-black hover:text-[#993015] btn border-2 rounded-full pl-9 pr-9">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                    </svg>
+                    Add to Cart</button>
+                <!-- button when active button clicked -->
+                <div class="absolute left-12 bottom-28 flex justify-between text-center bg-orange-600 text-white w-2/3 p-3 rounded-full">
+                    <button>-</button>
+                    <span>0</span>
+                    <button>+</button>
+                </div>
+                <div class="mt-10">
+                    <h3 class="text-xl text-gray-500">Panna Cotta</h3>
+                    <h2 class="text-2xl font-bold">Vanilla Panna Cotta</h2>
+                    <h2 class="text-2xl text-[#993015]">$6.50</h2>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- cart section  -->
+    <section class="max-w-sm lg:ml-9 lg:mr-9 lg:mt-8">
+        <div class="card lg:w-96 bg-base-100 card-lg shadow-sm">
+            <div class="card-body">
+                <h2 class="card-title text-4xl font-bold text-[#993015]">Your Cart (<span>0</span>)</h2>
+                <img src="images/illustration-empty-cart.svg" alt="" class="pl-15 pr-15">
+                <p class="text-[#993015] text-center font-semibold">your added items will be appear here</p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
