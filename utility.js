@@ -7,6 +7,12 @@ document.getElementById('cross1').addEventListener('click',function(){
     const boxItemOrderedTotalPrice1=document.getElementById('box1orderPrice')
     const totalItems=document.getElementById('totalItems')
     
+    //transaction
+    const moneyTotal=document.getElementById('finally-money')
+    const MoneyHave=parseFloat(moneyTotal.innerText)
+    const moneHaveToCut=parseFloat(boxItemOrderedTotalPrice1.innerText)
+    moneyTotal.innerText=MoneyHave-moneHaveToCut
+
     totalItems.innerText=parseInt(totalItems.innerText)-parseInt(boxItemOrdered1.innerText)
     buttonItems1.innerText=0;
     boxItemOrdered1.innerText=0;
@@ -14,6 +20,7 @@ document.getElementById('cross1').addEventListener('click',function(){
 
     const unvisible=document.getElementById('new1')
     unvisible.classList.add('hidden')
+
 })
 
 //BOX2:
@@ -23,6 +30,12 @@ document.getElementById('cross2').addEventListener('click',function(){
     const boxItemOrderedTotalPrice1=document.getElementById('box2orderPrice')
     const totalItems=document.getElementById('totalItems')
     
+    //transaction
+    const moneyTotal=document.getElementById('finally-money')
+    const MoneyHave=parseFloat(moneyTotal.innerText)
+    const moneHaveToCut=parseFloat(boxItemOrderedTotalPrice1.innerText)
+    moneyTotal.innerText=MoneyHave-moneHaveToCut
+
     totalItems.innerText=parseInt(totalItems.innerText)-parseInt(boxItemOrdered1.innerText)
     buttonItems1.innerText=0;
     boxItemOrdered1.innerText=0;
@@ -37,6 +50,12 @@ document.getElementById('cross3').addEventListener('click',function(){
     const boxItemOrdered1=document.getElementById('box3order')
     const boxItemOrderedTotalPrice1=document.getElementById('box3orderPrice')
     const totalItems=document.getElementById('totalItems')
+
+    //transaction
+    const moneyTotal=document.getElementById('finally-money')
+    const MoneyHave=parseFloat(moneyTotal.innerText)
+    const moneHaveToCut=parseFloat(boxItemOrderedTotalPrice1.innerText)
+    moneyTotal.innerText=MoneyHave-moneHaveToCut
     
     totalItems.innerText=parseInt(totalItems.innerText)-parseInt(boxItemOrdered1.innerText)
     buttonItems1.innerText=0;
@@ -52,6 +71,12 @@ document.getElementById('cross4').addEventListener('click',function(){
     const boxItemOrdered1=document.getElementById('box4order')
     const boxItemOrderedTotalPrice1=document.getElementById('box4orderPrice')
     const totalItems=document.getElementById('totalItems')
+
+    //transaction
+    const moneyTotal=document.getElementById('finally-money')
+    const MoneyHave=parseFloat(moneyTotal.innerText)
+    const moneHaveToCut=parseFloat(boxItemOrderedTotalPrice1.innerText)
+    moneyTotal.innerText=MoneyHave-moneHaveToCut
     
     totalItems.innerText=parseInt(totalItems.innerText)-parseInt(boxItemOrdered1.innerText)
     buttonItems1.innerText=0;
@@ -67,6 +92,12 @@ document.getElementById('cross5').addEventListener('click',function(){
     const boxItemOrdered1=document.getElementById('box5order')
     const boxItemOrderedTotalPrice1=document.getElementById('box5orderPrice')
     const totalItems=document.getElementById('totalItems')
+
+    //transaction
+    const moneyTotal=document.getElementById('finally-money')
+    const MoneyHave=parseFloat(moneyTotal.innerText)
+    const moneHaveToCut=parseFloat(boxItemOrderedTotalPrice1.innerText)
+    moneyTotal.innerText=MoneyHave-moneHaveToCut
     
     totalItems.innerText=parseInt(totalItems.innerText)-parseInt(boxItemOrdered1.innerText)
     buttonItems1.innerText=0;
@@ -82,6 +113,12 @@ document.getElementById('cross6').addEventListener('click',function(){
     const boxItemOrdered1=document.getElementById('box6order')
     const boxItemOrderedTotalPrice1=document.getElementById('box6orderPrice')
     const totalItems=document.getElementById('totalItems')
+
+    //transaction
+    const moneyTotal=document.getElementById('finally-money')
+    const MoneyHave=parseFloat(moneyTotal.innerText)
+    const moneHaveToCut=parseFloat(boxItemOrderedTotalPrice1.innerText)
+    moneyTotal.innerText=MoneyHave-moneHaveToCut
     
     totalItems.innerText=parseInt(totalItems.innerText)-parseInt(boxItemOrdered1.innerText)
     buttonItems1.innerText=0;
@@ -97,6 +134,12 @@ document.getElementById('cross7').addEventListener('click',function(){
     const boxItemOrdered1=document.getElementById('box7order')
     const boxItemOrderedTotalPrice1=document.getElementById('box7orderPrice')
     const totalItems=document.getElementById('totalItems')
+
+    //transaction
+    const moneyTotal=document.getElementById('finally-money')
+    const MoneyHave=parseFloat(moneyTotal.innerText)
+    const moneHaveToCut=parseFloat(boxItemOrderedTotalPrice1.innerText)
+    moneyTotal.innerText=MoneyHave-moneHaveToCut
     
     totalItems.innerText=parseInt(totalItems.innerText)-parseInt(boxItemOrdered1.innerText)
     buttonItems1.innerText=0;
@@ -112,6 +155,12 @@ document.getElementById('cross8').addEventListener('click',function(){
     const boxItemOrdered1=document.getElementById('box8order')
     const boxItemOrderedTotalPrice1=document.getElementById('box8orderPrice')
     const totalItems=document.getElementById('totalItems')
+
+    //transaction
+    const moneyTotal=document.getElementById('finally-money')
+    const MoneyHave=parseFloat(moneyTotal.innerText)
+    const moneHaveToCut=parseFloat(boxItemOrderedTotalPrice1.innerText)
+    moneyTotal.innerText=MoneyHave-moneHaveToCut
     
     totalItems.innerText=parseInt(totalItems.innerText)-parseInt(boxItemOrdered1.innerText)
     buttonItems1.innerText=0;
@@ -127,6 +176,12 @@ document.getElementById('cross9').addEventListener('click',function(){
     const boxItemOrdered1=document.getElementById('box8order')
     const boxItemOrderedTotalPrice1=document.getElementById('box9orderPrice')
     const totalItems=document.getElementById('totalItems')
+
+    //transaction
+    const moneyTotal=document.getElementById('finally-money')
+    const MoneyHave=parseFloat(moneyTotal.innerText)
+    const moneHaveToCut=parseFloat(boxItemOrderedTotalPrice1.innerText)
+    moneyTotal.innerText=MoneyHave-moneHaveToCut
     
     totalItems.innerText=parseInt(totalItems.innerText)-parseInt(boxItemOrdered1.innerText)
     buttonItems1.innerText=0;
