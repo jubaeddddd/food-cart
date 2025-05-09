@@ -19,8 +19,14 @@ document.getElementById('box1btn2pos').addEventListener('click', function () {
 
         const boxOrderItemsPrice = document.getElementById('box1orderPrice')
         const basePrice = parseFloat(document.getElementById('basePrice1').innerText)
-        boxOrderItemsPrice.innerText = basePrice * totalItemsNewValue
+        boxOrderItemsPrice.innerText = (basePrice * newVal)
 
+        //transaction
+        const transactionSection=document.getElementById('transaction')
+        transactionSection.classList.remove('hidden')
+
+        const moneyTotal=document.getElementById('finally-money')
+        moneyTotal.innerText=parseFloat(moneyTotal.innerText)+basePrice
 })
 document.getElementById('box1btn2neg').addEventListener('click', function () {
     const totalItemsCheck = parseInt(document.getElementById('totalItems').innerText)
@@ -43,7 +49,14 @@ document.getElementById('box1btn2neg').addEventListener('click', function () {
 
         const boxOrderItemsPrice = document.getElementById('box1orderPrice')
         const basePrice = parseFloat(document.getElementById('basePrice1').innerText)
-        boxOrderItemsPrice.innerText = basePrice * totalItemsNewValue
+        boxOrderItemsPrice.innerText = basePrice * newVal
+
+        //transaction
+        const transactionSection=document.getElementById('transaction')
+        transactionSection.classList.remove('hidden')
+
+        const moneyTotal=document.getElementById('finally-money')
+        moneyTotal.innerText=parseFloat(moneyTotal.innerText)-basePrice
     }
 })
 //BOX2:
@@ -67,7 +80,14 @@ document.getElementById('box2btn2pos').addEventListener('click', function () {
 
         const boxOrderItemsPrice = document.getElementById('box2orderPrice')
         const basePrice = parseFloat(document.getElementById('basePrice2').innerText)
-        boxOrderItemsPrice.innerText = basePrice * totalItemsNewValue
+        boxOrderItemsPrice.innerText = basePrice * newVal
+
+        //transaction
+        const transactionSection=document.getElementById('transaction')
+        transactionSection.classList.remove('hidden')
+
+        const moneyTotal=document.getElementById('finally-money')
+        moneyTotal.innerText=parseFloat(moneyTotal.innerText)+basePrice
 
 })
 document.getElementById('box2btn2neg').addEventListener('click', function () {
@@ -91,7 +111,14 @@ document.getElementById('box2btn2neg').addEventListener('click', function () {
 
         const boxOrderItemsPrice = document.getElementById('box2orderPrice')
         const basePrice = parseFloat(document.getElementById('basePrice2').innerText)
-        boxOrderItemsPrice.innerText = basePrice * totalItemsNewValue
+        boxOrderItemsPrice.innerText = basePrice * newVal
+
+        //transaction
+        const transactionSection=document.getElementById('transaction')
+        transactionSection.classList.remove('hidden')
+
+        const moneyTotal=document.getElementById('finally-money')
+        moneyTotal.innerText=parseFloat(moneyTotal.innerText)-basePrice
     }
 })
 //BOX3:
@@ -115,7 +142,14 @@ document.getElementById('box3btn2pos').addEventListener('click', function () {
 
         const boxOrderItemsPrice = document.getElementById('box3orderPrice')
         const basePrice = parseFloat(document.getElementById('basePrice3').innerText)
-        boxOrderItemsPrice.innerText = basePrice * totalItemsNewValue
+        boxOrderItemsPrice.innerText = basePrice * newVal
+
+        //transaction
+        const transactionSection=document.getElementById('transaction')
+        transactionSection.classList.remove('hidden')
+
+        const moneyTotal=document.getElementById('finally-money')
+        moneyTotal.innerText=parseFloat(moneyTotal.innerText)+basePrice
 
 })
 document.getElementById('box3btn2neg').addEventListener('click', function () {
@@ -139,7 +173,14 @@ document.getElementById('box3btn2neg').addEventListener('click', function () {
 
         const boxOrderItemsPrice = document.getElementById('box3orderPrice')
         const basePrice = parseFloat(document.getElementById('basePrice3').innerText)
-        boxOrderItemsPrice.innerText = basePrice * totalItemsNewValue
+        boxOrderItemsPrice.innerText = basePrice * newVal
+
+        //transaction
+        const transactionSection=document.getElementById('transaction')
+        transactionSection.classList.remove('hidden')
+
+        const moneyTotal=document.getElementById('finally-money')
+        moneyTotal.innerText=parseFloat(moneyTotal.innerText)-basePrice
     }
 })
 //BOX 4:
@@ -163,7 +204,14 @@ document.getElementById('box4btn2pos').addEventListener('click', function () {
 
         const boxOrderItemsPrice = document.getElementById('box4orderPrice')
         const basePrice = parseFloat(document.getElementById('basePrice4').innerText)
-        boxOrderItemsPrice.innerText = basePrice * totalItemsNewValue
+        boxOrderItemsPrice.innerText = basePrice *newVal
+
+        //transaction
+        const transactionSection=document.getElementById('transaction')
+        transactionSection.classList.remove('hidden')
+
+        const moneyTotal=document.getElementById('finally-money')
+        moneyTotal.innerText=parseFloat(moneyTotal.innerText)+basePrice
 
 })
 document.getElementById('box4btn2neg').addEventListener('click', function () {
@@ -187,7 +235,14 @@ document.getElementById('box4btn2neg').addEventListener('click', function () {
 
         const boxOrderItemsPrice = document.getElementById('box4orderPrice')
         const basePrice = parseFloat(document.getElementById('basePrice4').innerText)
-        boxOrderItemsPrice.innerText = basePrice * totalItemsNewValue
+        boxOrderItemsPrice.innerText = basePrice * newVal
+
+        //transaction
+        const transactionSection=document.getElementById('transaction')
+        transactionSection.classList.remove('hidden')
+
+        const moneyTotal=document.getElementById('finally-money')
+        moneyTotal.innerText=parseFloat(moneyTotal.innerText)-basePrice
     }
 })
 //BOX 5:
@@ -211,7 +266,14 @@ document.getElementById('box5btn2pos').addEventListener('click', function () {
 
         const boxOrderItemsPrice = document.getElementById('box5orderPrice')
         const basePrice = parseFloat(document.getElementById('basePrice5').innerText)
-        boxOrderItemsPrice.innerText = basePrice * totalItemsNewValue
+        boxOrderItemsPrice.innerText = basePrice * newVal
+
+        //transaction
+        const transactionSection=document.getElementById('transaction')
+        transactionSection.classList.remove('hidden')
+
+        const moneyTotal=document.getElementById('finally-money')
+        moneyTotal.innerText=parseFloat(moneyTotal.innerText)+basePrice
 
 })
 document.getElementById('box5btn2neg').addEventListener('click', function () {
@@ -235,7 +297,14 @@ document.getElementById('box5btn2neg').addEventListener('click', function () {
 
         const boxOrderItemsPrice = document.getElementById('box5orderPrice')
         const basePrice = parseFloat(document.getElementById('basePrice5').innerText)
-        boxOrderItemsPrice.innerText = basePrice * totalItemsNewValue
+        boxOrderItemsPrice.innerText = basePrice * newVal
+
+        //transaction
+        const transactionSection=document.getElementById('transaction')
+        transactionSection.classList.remove('hidden')
+
+        const moneyTotal=document.getElementById('finally-money')
+        moneyTotal.innerText=parseFloat(moneyTotal.innerText)-basePrice
     }
 })
 //BOX 6:
@@ -259,7 +328,14 @@ document.getElementById('box6btn2pos').addEventListener('click', function () {
 
         const boxOrderItemsPrice = document.getElementById('box6orderPrice')
         const basePrice = parseFloat(document.getElementById('basePrice6').innerText)
-        boxOrderItemsPrice.innerText = basePrice * totalItemsNewValue
+        boxOrderItemsPrice.innerText = basePrice * newVal
+
+        //transaction
+        const transactionSection=document.getElementById('transaction')
+        transactionSection.classList.remove('hidden')
+
+        const moneyTotal=document.getElementById('finally-money')
+        moneyTotal.innerText=parseFloat(moneyTotal.innerText)+basePrice
 
 })
 document.getElementById('box6btn2neg').addEventListener('click', function () {
@@ -283,7 +359,14 @@ document.getElementById('box6btn2neg').addEventListener('click', function () {
 
         const boxOrderItemsPrice = document.getElementById('box6orderPrice')
         const basePrice = parseFloat(document.getElementById('basePrice6').innerText)
-        boxOrderItemsPrice.innerText = basePrice * totalItemsNewValue
+        boxOrderItemsPrice.innerText = basePrice * newVal
+
+        //transaction
+        const transactionSection=document.getElementById('transaction')
+        transactionSection.classList.remove('hidden')
+
+        const moneyTotal=document.getElementById('finally-money')
+        moneyTotal.innerText=parseFloat(moneyTotal.innerText)-basePrice
     }
 })
 //BOX 7:
@@ -307,7 +390,14 @@ document.getElementById('box7btn2pos').addEventListener('click', function () {
 
         const boxOrderItemsPrice = document.getElementById('box7orderPrice')
         const basePrice = parseFloat(document.getElementById('basePrice7').innerText)
-        boxOrderItemsPrice.innerText = basePrice * totalItemsNewValue
+        boxOrderItemsPrice.innerText = basePrice * newVal
+
+        //transaction
+        const transactionSection=document.getElementById('transaction')
+        transactionSection.classList.remove('hidden')
+
+        const moneyTotal=document.getElementById('finally-money')
+        moneyTotal.innerText=parseFloat(moneyTotal.innerText)+basePrice
 
 })
 document.getElementById('box7btn2neg').addEventListener('click', function () {
@@ -331,7 +421,14 @@ document.getElementById('box7btn2neg').addEventListener('click', function () {
 
         const boxOrderItemsPrice = document.getElementById('box7orderPrice')
         const basePrice = parseFloat(document.getElementById('basePrice7').innerText)
-        boxOrderItemsPrice.innerText = basePrice * totalItemsNewValue
+        boxOrderItemsPrice.innerText = basePrice * newVal
+
+        //transaction
+        const transactionSection=document.getElementById('transaction')
+        transactionSection.classList.remove('hidden')
+
+        const moneyTotal=document.getElementById('finally-money')
+        moneyTotal.innerText=parseFloat(moneyTotal.innerText)-basePrice
     }
 })
 //BOX 8:
@@ -355,7 +452,14 @@ document.getElementById('box8btn2pos').addEventListener('click', function () {
 
         const boxOrderItemsPrice = document.getElementById('box8orderPrice')
         const basePrice = parseFloat(document.getElementById('basePrice8').innerText)
-        boxOrderItemsPrice.innerText = basePrice * totalItemsNewValue
+        boxOrderItemsPrice.innerText = basePrice * newVal
+
+        //transaction
+        const transactionSection=document.getElementById('transaction')
+        transactionSection.classList.remove('hidden')
+
+        const moneyTotal=document.getElementById('finally-money')
+        moneyTotal.innerText=parseFloat(moneyTotal.innerText)+basePrice
 
 })
 document.getElementById('box8btn2neg').addEventListener('click', function () {
@@ -379,7 +483,14 @@ document.getElementById('box8btn2neg').addEventListener('click', function () {
 
         const boxOrderItemsPrice = document.getElementById('box8orderPrice')
         const basePrice = parseFloat(document.getElementById('basePrice8').innerText)
-        boxOrderItemsPrice.innerText = basePrice * totalItemsNewValue
+        boxOrderItemsPrice.innerText = basePrice * newVal
+
+        //transaction
+        const transactionSection=document.getElementById('transaction')
+        transactionSection.classList.remove('hidden')
+
+        const moneyTotal=document.getElementById('finally-money')
+        moneyTotal.innerText=parseFloat(moneyTotal.innerText)-basePrice
     }
 })
 //BOX 9:
@@ -403,7 +514,14 @@ document.getElementById('box9btn2pos').addEventListener('click', function () {
 
         const boxOrderItemsPrice = document.getElementById('box9orderPrice')
         const basePrice = parseFloat(document.getElementById('basePrice9').innerText)
-        boxOrderItemsPrice.innerText = basePrice * totalItemsNewValue
+        boxOrderItemsPrice.innerText = basePrice * newVal
+
+        //transaction
+        const transactionSection=document.getElementById('transaction')
+        transactionSection.classList.remove('hidden')
+
+        const moneyTotal=document.getElementById('finally-money')
+        moneyTotal.innerText=parseFloat(moneyTotal.innerText)+basePrice
 
 })
 document.getElementById('box9btn2neg').addEventListener('click', function () {
@@ -427,6 +545,13 @@ document.getElementById('box9btn2neg').addEventListener('click', function () {
 
         const boxOrderItemsPrice = document.getElementById('box9orderPrice')
         const basePrice = parseFloat(document.getElementById('basePrice9').innerText)
-        boxOrderItemsPrice.innerText = basePrice * totalItemsNewValue
+        boxOrderItemsPrice.innerText = basePrice * newVal
+
+        //transaction
+        const transactionSection=document.getElementById('transaction')
+        transactionSection.classList.remove('hidden')
+
+        const moneyTotal=document.getElementById('finally-money')
+        moneyTotal.innerText=parseFloat(moneyTotal.innerText)-basePrice
     }
 })
