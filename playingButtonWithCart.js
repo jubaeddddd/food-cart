@@ -27,6 +27,17 @@ document.getElementById('box1btn2pos').addEventListener('click', function () {
 
         const moneyTotal=document.getElementById('finally-money')
         moneyTotal.innerText=parseFloat(moneyTotal.innerText)+basePrice
+
+        //modal
+        const activeModal=document.getElementById('box1modal')
+        const items=document.getElementById('modal1Order')
+        const tottal=document.getElementById('modal1OrderTotal')
+        const modalTotal=document.getElementById('modalTOtal')
+
+        items.innerText=newVal
+        tottal.innerText=basePrice * newVal
+        modalTotal.innerText=moneyTotal.innerText
+        activeModal.classList.remove('hidden')
 })
 document.getElementById('box1btn2neg').addEventListener('click', function () {
     const totalItemsCheck = parseInt(document.getElementById('totalItems').innerText)
@@ -88,6 +99,17 @@ document.getElementById('box2btn2pos').addEventListener('click', function () {
 
         const moneyTotal=document.getElementById('finally-money')
         moneyTotal.innerText=parseFloat(moneyTotal.innerText)+basePrice
+
+        //modal
+        const activeModal=document.getElementById('box2modal')
+        const items=document.getElementById('modal2Order')
+        const tottal=document.getElementById('modal2OrderTotal')
+        const modalTotal=document.getElementById('modalTOtal')
+
+        items.innerText=newVal
+        tottal.innerText=basePrice * newVal
+        modalTotal.innerText=moneyTotal.innerText
+        activeModal.classList.remove('hidden')
 
 })
 document.getElementById('box2btn2neg').addEventListener('click', function () {
@@ -151,6 +173,17 @@ document.getElementById('box3btn2pos').addEventListener('click', function () {
         const moneyTotal=document.getElementById('finally-money')
         moneyTotal.innerText=parseFloat(moneyTotal.innerText)+basePrice
 
+        //modal
+        const activeModal=document.getElementById('box3modal')
+        const items=document.getElementById('modal3Order')
+        const tottal=document.getElementById('modal3OrderTotal')
+        const modalTotal=document.getElementById('modalTOtal')
+
+        items.innerText=newVal
+        tottal.innerText=basePrice * newVal
+        modalTotal.innerText=moneyTotal.innerText
+        activeModal.classList.remove('hidden')
+
 })
 document.getElementById('box3btn2neg').addEventListener('click', function () {
     const totalItemsCheck = parseInt(document.getElementById('totalItems').innerText)
@@ -212,6 +245,17 @@ document.getElementById('box4btn2pos').addEventListener('click', function () {
 
         const moneyTotal=document.getElementById('finally-money')
         moneyTotal.innerText=parseFloat(moneyTotal.innerText)+basePrice
+
+        //modal
+        const activeModal=document.getElementById('box4modal')
+        const items=document.getElementById('modal4Order')
+        const tottal=document.getElementById('modal4OrderTotal')
+        const modalTotal=document.getElementById('modalTOtal')
+
+        items.innerText=newVal
+        tottal.innerText=basePrice * newVal
+        modalTotal.innerText=moneyTotal.innerText
+        activeModal.classList.remove('hidden')
 
 })
 document.getElementById('box4btn2neg').addEventListener('click', function () {
@@ -275,6 +319,17 @@ document.getElementById('box5btn2pos').addEventListener('click', function () {
         const moneyTotal=document.getElementById('finally-money')
         moneyTotal.innerText=parseFloat(moneyTotal.innerText)+basePrice
 
+        //modal
+        const activeModal=document.getElementById('box5modal')
+        const items=document.getElementById('modal5Order')
+        const tottal=document.getElementById('modal5OrderTotal')
+        const modalTotal=document.getElementById('modalTOtal')
+
+        items.innerText=newVal
+        tottal.innerText=basePrice * newVal
+        modalTotal.innerText=moneyTotal.innerText
+        activeModal.classList.remove('hidden')
+
 })
 document.getElementById('box5btn2neg').addEventListener('click', function () {
     const totalItemsCheck = parseInt(document.getElementById('totalItems').innerText)
@@ -336,6 +391,17 @@ document.getElementById('box6btn2pos').addEventListener('click', function () {
 
         const moneyTotal=document.getElementById('finally-money')
         moneyTotal.innerText=parseFloat(moneyTotal.innerText)+basePrice
+
+        //modal
+        const activeModal=document.getElementById('box6modal')
+        const items=document.getElementById('modal6Order')
+        const tottal=document.getElementById('modal6OrderTotal')
+        const modalTotal=document.getElementById('modalTOtal')
+
+        items.innerText=newVal
+        tottal.innerText=basePrice * newVal
+        modalTotal.innerText=moneyTotal.innerText
+        activeModal.classList.remove('hidden')
 
 })
 document.getElementById('box6btn2neg').addEventListener('click', function () {
@@ -399,6 +465,17 @@ document.getElementById('box7btn2pos').addEventListener('click', function () {
         const moneyTotal=document.getElementById('finally-money')
         moneyTotal.innerText=parseFloat(moneyTotal.innerText)+basePrice
 
+        //modal
+        const activeModal=document.getElementById('box7modal')
+        const items=document.getElementById('modal7Order')
+        const tottal=document.getElementById('modal7OrderTotal')
+        const modalTotal=document.getElementById('modalTOtal')
+
+        items.innerText=newVal
+        tottal.innerText=basePrice * newVal
+        modalTotal.innerText=moneyTotal.innerText
+        activeModal.classList.remove('hidden')
+
 })
 document.getElementById('box7btn2neg').addEventListener('click', function () {
     const totalItemsCheck = parseInt(document.getElementById('totalItems').innerText)
@@ -461,6 +538,17 @@ document.getElementById('box8btn2pos').addEventListener('click', function () {
         const moneyTotal=document.getElementById('finally-money')
         moneyTotal.innerText=parseFloat(moneyTotal.innerText)+basePrice
 
+        //modal
+        const activeModal=document.getElementById('box8modal')
+        const items=document.getElementById('modal8Order')
+        const tottal=document.getElementById('modal8OrderTotal')
+        const modalTotal=document.getElementById('modalTOtal')
+
+        items.innerText=newVal
+        tottal.innerText=basePrice * newVal
+        modalTotal.innerText=moneyTotal.innerText
+        activeModal.classList.remove('hidden')
+
 })
 document.getElementById('box8btn2neg').addEventListener('click', function () {
     const totalItemsCheck = parseInt(document.getElementById('totalItems').innerText)
@@ -522,6 +610,17 @@ document.getElementById('box9btn2pos').addEventListener('click', function () {
 
         const moneyTotal=document.getElementById('finally-money')
         moneyTotal.innerText=parseFloat(moneyTotal.innerText)+basePrice
+
+        //modal
+        const activeModal=document.getElementById('box9modal')
+        const items=document.getElementById('modal9Order')
+        const tottal=document.getElementById('modal9OrderTotal')
+        const modalTotal=document.getElementById('modalTOtal')
+
+        items.innerText=newVal
+        tottal.innerText=basePrice * newVal
+        modalTotal.innerText=moneyTotal.innerText
+        activeModal.classList.remove('hidden')
 
 })
 document.getElementById('box9btn2neg').addEventListener('click', function () {

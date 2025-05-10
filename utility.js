@@ -21,6 +21,12 @@ document.getElementById('cross1').addEventListener('click',function(){
     const unvisible=document.getElementById('new1')
     unvisible.classList.add('hidden')
 
+    //modal
+    const offBox1Modal=document.getElementById('box1modal')
+    offBox1Modal.classList.add('hidden')
+    const modalTotal=document.getElementById('modalTOtal')
+    modalTotal.innerText=MoneyHave-moneHaveToCut
+
 })
 
 //BOX2:
@@ -43,6 +49,12 @@ document.getElementById('cross2').addEventListener('click',function(){
 
     const unvisible=document.getElementById('new2')
     unvisible.classList.add('hidden')
+
+    //modal
+    const offBox1Modal=document.getElementById('box2modal')
+    offBox1Modal.classList.add('hidden')
+    const modalTotal=document.getElementById('modalTOtal')
+    modalTotal.innerText=MoneyHave-moneHaveToCut
 })
 //BOX3:
 document.getElementById('cross3').addEventListener('click',function(){
@@ -64,6 +76,12 @@ document.getElementById('cross3').addEventListener('click',function(){
 
     const unvisible=document.getElementById('new3')
     unvisible.classList.add('hidden')
+
+    //modal
+    const offBox1Modal=document.getElementById('box3modal')
+    offBox1Modal.classList.add('hidden')
+    const modalTotal=document.getElementById('modalTOtal')
+    modalTotal.innerText=MoneyHave-moneHaveToCut
 })
 // BOX4:
 document.getElementById('cross4').addEventListener('click',function(){
@@ -85,6 +103,12 @@ document.getElementById('cross4').addEventListener('click',function(){
 
     const unvisible=document.getElementById('new4')
     unvisible.classList.add('hidden')
+
+    //modal
+    const offBox1Modal=document.getElementById('box4modal')
+    offBox1Modal.classList.add('hidden')
+    const modalTotal=document.getElementById('modalTOtal')
+    modalTotal.innerText=MoneyHave-moneHaveToCut
 })
 // BOX 5:
 document.getElementById('cross5').addEventListener('click',function(){
@@ -106,6 +130,12 @@ document.getElementById('cross5').addEventListener('click',function(){
 
     const unvisible=document.getElementById('new5')
     unvisible.classList.add('hidden')
+
+    //modal
+    const offBox1Modal=document.getElementById('box5modal')
+    offBox1Modal.classList.add('hidden')
+    const modalTotal=document.getElementById('modalTOtal')
+    modalTotal.innerText=MoneyHave-moneHaveToCut
 })
 //BOX 6:
 document.getElementById('cross6').addEventListener('click',function(){
@@ -127,6 +157,12 @@ document.getElementById('cross6').addEventListener('click',function(){
 
     const unvisible=document.getElementById('new6')
     unvisible.classList.add('hidden')
+
+    //modal
+    const offBox1Modal=document.getElementById('box6modal')
+    offBox1Modal.classList.add('hidden')
+    const modalTotal=document.getElementById('modalTOtal')
+    modalTotal.innerText=MoneyHave-moneHaveToCut
 })
 // BOX 7:
 document.getElementById('cross7').addEventListener('click',function(){
@@ -148,6 +184,12 @@ document.getElementById('cross7').addEventListener('click',function(){
 
     const unvisible=document.getElementById('new7')
     unvisible.classList.add('hidden')
+
+    //modal
+    const offBox1Modal=document.getElementById('box7modal')
+    offBox1Modal.classList.add('hidden')
+    const modalTotal=document.getElementById('modalTOtal')
+    modalTotal.innerText=MoneyHave-moneHaveToCut
 })
 // BOX 8
 document.getElementById('cross8').addEventListener('click',function(){
@@ -169,6 +211,12 @@ document.getElementById('cross8').addEventListener('click',function(){
 
     const unvisible=document.getElementById('new8')
     unvisible.classList.add('hidden')
+
+    //modal
+    const offBox1Modal=document.getElementById('box8modal')
+    offBox1Modal.classList.add('hidden')
+    const modalTotal=document.getElementById('modalTOtal')
+    modalTotal.innerText=MoneyHave-moneHaveToCut
 })
 //BOX 9
 document.getElementById('cross9').addEventListener('click',function(){
@@ -190,4 +238,10 @@ document.getElementById('cross9').addEventListener('click',function(){
 
     const unvisible=document.getElementById('new9')
     unvisible.classList.add('hidden')
+
+    //modal
+    const offBox1Modal=document.getElementById('box9modal')
+    offBox1Modal.classList.add('hidden')
+    const modalTotal=document.getElementById('modalTOtal')
+    modalTotal.innerText=MoneyHave-moneHaveToCut
 })

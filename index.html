@@ -576,16 +576,229 @@
                     <h1 class="text-4xl font-bold">$<span id="finally-money">0.00</span></h1>
                 </div>
                 <!-- promise -->
-                 <div class="flex justify-center mt-4 mb-4 pt-1 pb-1 pr-2 pl-2 bg-slate-200">
+                <div class="flex justify-center mt-4 mb-4 pt-1 pb-1 pr-2 pl-2 bg-slate-200">
                     <h1>This is a <span class="font-bold">Carbon-neutral</span> delivery</h1>
-                 </div>
-                 <!-- confirmation button  -->
+                </div>
+                <!-- confirmation button  -->
                 <div>
-                    <button class="btn text-white bg-[#993015] w-full rounded-3xl">Confirm Order</button>
+                    <button id="confirmm" onclick="my_modal_5.showModal()"
+                        class="btn text-white bg-[#993015] w-full rounded-3xl">Confirm Order</button>
                 </div>
             </div>
         </div>
     </section>
+
+
+    <!-- MODAL  -->
+    <dialog id="my_modal_5" class="modal pt-10 pl-10 pr-10">
+        <div class="modal-box">
+
+            <!-- check  -->
+            <svg id="modalCheck" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-14 text-green-700">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+            </svg>
+            <!-- modal confirmation -->
+            <div class="mt-10">
+                <h1 id="orderConfirmation" class="text-5xl font-bold mb-4">Order Confirmed</h1>
+                <h1>We hope you enjoy the food!</h1>
+            </div>
+
+            <!-- card -->
+            <div class="card w-full  bg-gray-100 mt-8">
+                <div class="card-body">
+                    <!--modal of box1 -->
+                    <div id="box1modal" class="hidden">
+                        <div class="flex items-center justify-around">
+                            <div>
+                                <div class="flex">
+                                    <img class="w-1/4 lg:w-1/3 " src="images/image-waffle-thumbnail.jpg" alt="">
+                                    <div class="ml-2">
+                                        <h1 class="font-semibold lg:font-bold">Waffle with Berries</h1>
+                                        <h1 class="mt-6 lg:text-xl"><span class="text-[#993015] mr-3 font-bold"><span
+                                                    id="modal1Order">0</span>x</span>@$<span id="">6.00</span>
+                                        </h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h1 class="text-2xl font-bold">$<span id="modal1OrderTotal">0.00</span></h1>
+                            </div>
+                        </div>
+                        <div class="divider mb-6"></div>
+                    </div>
+                    <!--modal of box2 -->
+                    <div id="box2modal" class="hidden">
+                        <div class="flex items-center justify-around">
+                            <div>
+                                <div class="flex">
+                                    <img class="w-1/4 lg:w-1/3 " src="images/image-creme-brulee-thumbnail.jpg" alt="">
+                                    <div class="ml-2">
+                                        <h1 class="font-semibold lg:font-bold">Vanilla Crème Brûlée</h1>
+                                        <h1 class="mt-6 lg:text-xl"><span class="text-[#993015] mr-3 font-bold"><span
+                                                    id="modal2Order">0</span>x</span>@$<span id="">7.00</span>
+                                        </h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h1 class="text-2xl font-bold">$<span id="modal2OrderTotal">0.00</span></h1>
+                            </div>
+                        </div>
+                        <div class="divider mb-6"></div>
+                    </div>
+                    <!--modal of box3 -->
+                    <div id="box3modal" class="hidden">
+                        <div class="flex items-center justify-around">
+                            <div>
+                                <div class="flex">
+                                    <img class="w-1/4 lg:w-1/3 " src="images/image-macaron-thumbnail.jpg" alt="">
+                                    <div class="ml-2">
+                                        <h1 class="font-semibold lg:font-bold">Macaron Mix of Five</h1>
+                                        <h1 class="mt-6 lg:text-xl"><span class="text-[#993015] mr-3 font-bold"><span
+                                                    id="modal3Order">0</span>x</span>@$<span id="">8.00</span>
+                                        </h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h1 class="text-2xl font-bold">$<span id="modal3OrderTotal">0.00</span></h1>
+                            </div>
+                        </div>
+                        <div class="divider mb-6"></div>
+                    </div>
+                    <!--modal of box4 -->
+                    <div id="box4modal" class="hidden">
+                        <div class="flex items-center justify-around">
+                            <div>
+                                <div class="flex">
+                                    <img class="w-1/4 lg:w-1/3 " src="images/image-tiramisu-thumbnail.jpg" alt="">
+                                    <div class="ml-2">
+                                        <h1 class="font-semibold lg:font-bold">Classic Tiramisu</h1>
+                                        <h1 class="mt-6 lg:text-xl"><span class="text-[#993015] mr-3 font-bold"><span
+                                                    id="modal4Order">0</span>x</span>@$<span id="">5.50</span>
+                                        </h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h1 class="text-2xl font-bold">$<span id="modal4OrderTotal">0.00</span></h1>
+                            </div>
+                        </div>
+                        <div class="divider mb-6"></div>
+                    </div>
+                    <!--modal of box5 -->
+                    <div id="box5modal" class="hidden">
+                        <div class="flex items-center justify-around">
+                            <div>
+                                <div class="flex">
+                                    <img class="w-1/4 lg:w-1/3 " src="images/image-baklava-thumbnail.jpg" alt="">
+                                    <div class="ml-2">
+                                        <h1 class="font-semibold lg:font-bold">Pistachio Baklava</h1>
+                                        <h1 class="mt-6 lg:text-xl"><span class="text-[#993015] mr-3 font-bold"><span
+                                                    id="modal5Order">0</span>x</span>@$<span id="">4.00</span>
+                                        </h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h1 class="text-2xl font-bold">$<span id="modal5OrderTotal">0.00</span></h1>
+                            </div>
+                        </div>
+                        <div class="divider mb-6"></div>
+                    </div>
+                    <!--modal of box6 -->
+                    <div id="box6modal" class="hidden">
+                        <div class="flex items-center justify-around">
+                            <div>
+                                <div class="flex">
+                                    <img class="w-1/4 lg:w-1/3 " src="images/image-meringue-thumbnail.jpg" alt="">
+                                    <div class="ml-2">
+                                        <h1 class="font-semibold lg:font-bold">Lemon Meringue Pie</h1>
+                                        <h1 class="mt-6 lg:text-xl"><span class="text-[#993015] mr-3 font-bold"><span
+                                                    id="modal6Order">0</span>x</span>@$<span id="">5.00</span>
+                                        </h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h1 class="text-2xl font-bold">$<span id="modal6OrderTotal">0.00</span></h1>
+                            </div>
+                        </div>
+                        <div class="divider mb-6"></div>
+                    </div>
+                    <!--modal of box7 -->
+                    <div id="box7modal" class="hidden">
+                        <div class="flex items-center justify-around">
+                            <div>
+                                <div class="flex">
+                                    <img class="w-1/4 lg:w-1/3 " src="images/image-cake-thumbnail.jpg" alt="">
+                                    <div class="ml-2">
+                                        <h1 class="font-semibold lg:font-bold">Red Velvet Cake</h1>
+                                        <h1 class="mt-6 lg:text-xl"><span class="text-[#993015] mr-3 font-bold"><span
+                                                    id="modal7Order">0</span>x</span>@$<span id="">4.50</span>
+                                        </h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h1 class="text-2xl font-bold">$<span id="modal7OrderTotal">0.00</span></h1>
+                            </div>
+                        </div>
+                        <div class="divider mb-6"></div>
+                    </div>
+                    <!--modal of box8 -->
+                    <div id="box8modal" class="hidden">
+                        <div class="flex items-center justify-around">
+                            <div>
+                                <div class="flex">
+                                    <img class="w-1/4 lg:w-1/3 " src="images/image-brownie-thumbnail.jpg" alt="">
+                                    <div class="ml-2">
+                                        <h1 class="font-semibold lg:font-bold">Salter Caramek Brownie</h1>
+                                        <h1 class="mt-6 lg:text-xl"><span class="text-[#993015] mr-3 font-bold"><span
+                                                    id="modal8Order">0</span>x</span>@$<span id="">5.50</span>
+                                        </h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h1 class="text-2xl font-bold">$<span id="modal8OrderTotal">0.00</span></h1>
+                            </div>
+                        </div>
+                        <div class="divider mb-6"></div>
+                    </div>
+                    <!--modal of box9 -->
+                    <div id="box9modal" class="hidden">
+                        <div class="flex items-center justify-around">
+                            <div>
+                                <div class="flex">
+                                    <img class="w-1/4 lg:w-1/3 " src="images/image-panna-cotta-thumbnail.jpg" alt="">
+                                    <div class="ml-2">
+                                        <h1 class="font-semibold lg:font-bold">Vanilla Panna Cotta</h1>
+                                        <h1 class="mt-6 lg:text-xl"><span class="text-[#993015] mr-3 font-bold"><span
+                                                    id="modal9Order">0</span>x</span>@$<span id="">6.50</span>
+                                        </h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h1 class="text-2xl font-bold">$<span id="modal9OrderTotal">0.00</span></h1>
+                            </div>
+                        </div>
+                        <div class="divider mb-6"></div>
+                    </div>
+
+
+                    <!-- MODAL TOTAL  -->
+                    <div class="flex justify-around items-center">
+                        <h1 class="text-xl">Order Total</h1>
+                        <h1 class="text-4xl font-bold">$<span id="modalTOtal">0.00</span></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </dialog>
 
     <script src="button.js"></script>
     <script src="playingButtonWithCart.js"></script>
